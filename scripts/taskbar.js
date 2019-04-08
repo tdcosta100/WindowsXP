@@ -2,6 +2,7 @@
 Made by Tiago Costa
 https://github.com/tdcosta100
 */
+
 (function($)
 {
 	var wallpaperStyle;
