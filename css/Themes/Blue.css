@@ -101,15 +101,15 @@ https://github.com/tdcosta100
 	background-size: 1650% 707.142857%;
 }
 
-#start-button .background .middle .top {
+#start-button .background .center .top {
 	background-size: 241.463415% 761.538462%;
 }
 
-#start-button .background .middle .middle {
+#start-button .background .center .middle {
 	background-size: 241.463415% 1650%;
 }
 
-#start-button .background .middle .bottom {
+#start-button .background .center .bottom {
 	background-size: 241.463415% 707.142857%;
 }
 
@@ -129,7 +129,7 @@ https://github.com/tdcosta100
 	background-position-x: 0;
 }
 
-#start-button .background .middle .row {
+#start-button .background .center .row {
 	background-position-x: 10.344828%;
 }
 
@@ -142,7 +142,7 @@ https://github.com/tdcosta100
 	background-position-y: 0;
 }
 
-#start-button .background .column .middle {
+#start-button .background .middle {
 	background-position-y: 13.978495%;
 }
 
@@ -155,7 +155,7 @@ https://github.com/tdcosta100
 	background-position-y: 38.372093%;
 }
 
-#start-button.hover .background .column .middle {
+#start-button.hover .background .middle {
 	background-position-y: 49.462366%;
 }
 
@@ -169,7 +169,7 @@ https://github.com/tdcosta100
 	background-position-y: 76.744186%;
 }
 
-#start-button.pressed .background .column .middle {
+#start-button.pressed .background .middle {
 	background-position-y: 84.946237%;
 }
 
@@ -185,7 +185,7 @@ https://github.com/tdcosta100
 	height: 100%;
 }
 
-/* Start Button - Sizes */
+/* Tray Notify - Sizes */
 #tray-notify .background .left {
 	width: 34px;
 }
@@ -202,7 +202,7 @@ https://github.com/tdcosta100
 	height: 12px;
 }
 
-/* Start Button - Background */
+/* Tray Notify - Background */
 #tray-notify .background .row {
 	background-image: url(../../images/Themes/Blue/TaskbarTray.png);
 	background-repeat: no-repeat;
@@ -221,15 +221,15 @@ https://github.com/tdcosta100
 	background-size: 323.529412% 233.333333%;
 }
 
-#tray-notify .background .middle .top {
+#tray-notify .background .center .top {
 	background-size: 166.666667% 233.333333%;
 }
 
-#tray-notify .background .middle .middle {
+#tray-notify .background .center .middle {
 	background-size: 166.666667% 700%;
 }
 
-#tray-notify .background .middle .bottom {
+#tray-notify .background .center .bottom {
 	background-size: 166.666667% 233.333333%;
 }
 
@@ -249,7 +249,7 @@ https://github.com/tdcosta100
 	background-position-x: 0;
 }
 
-#tray-notify .background .middle .row {
+#tray-notify .background .center .row {
 	background-position-x: 77.272727%;
 }
 
@@ -261,7 +261,7 @@ https://github.com/tdcosta100
 	background-position-y: 0;
 }
 
-#tray-notify .background .column .middle {
+#tray-notify .background .middle {
 	background-position-y: 50%;
 }
 
@@ -284,4 +284,221 @@ https://github.com/tdcosta100
 #tray-notify .clock {
 	width: 40px;
 	text-align: center;
+}
+
+/* Window */
+
+/* Window Caption - Sizes */
+.window .caption .background .left {
+	width: 28px;
+}
+
+.window .caption .background .right {
+	width: 35px;
+}
+
+.window .caption .background .top {
+	height: 9px;
+}
+
+.window .caption .background .bottom {
+	height: 17px;
+}
+
+/* Window Caption - Background */
+.window .caption .background .row {
+	background-image: url(../../images/Themes/Blue/FrameCaption.png);
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+}
+
+.window .caption .background .left .top {
+	background-size: 235.714286% 644.444444%;
+}
+
+.window .caption .background .left .middle {
+	background-size: 235.714286% 1933.333333%;
+}
+
+.window .caption .background .left .bottom {
+	background-size: 235.714286% 341.176471%;
+}
+
+.window .caption .background .center .top {
+	background-size: 2200% 644.444444%;
+}
+
+.window .caption .background .center .middle {
+	background-size: 2200% 1933.333333%;
+}
+
+.window .caption .background .center .bottom {
+	background-size: 2200% 341.176471%;
+}
+
+.window .caption .background .right .top {
+	background-size: 188.571429% 644.444444%;
+}
+
+.window .caption .background .right .middle {
+	background-size: 188.571429% 1933.333333%;
+}
+
+.window .caption .background .right .bottom {
+	background-size: 188.571429% 341.176471%;
+}
+
+.window .caption .background .left .row {
+	background-position-x: 0;
+}
+
+.window .caption .background .center .row {
+	background-position-x: 44.444444%;
+}
+
+.window .caption .background .right .row {
+	background-position-x: 100%;
+}
+
+/* Active */
+.window.active .caption .background .top {
+	background-position-y: 0;
+}
+
+.window.active .caption .background .middle {
+	background-position-y: 16.363636%;
+}
+
+.window.active .caption .background .bottom {
+	background-position-y: 29.268293%;
+}
+
+/* Inactive */
+.window.inactive .caption .background .top {
+	background-position-y: 59.183673%;
+}
+
+.window.inactive .caption .background .middle {
+	background-position-y: 69.090909%;
+}
+
+.window.inactive .caption .background .bottom {
+	background-position-y: 100%;
+}
+
+/* Window Frame */
+.window .frame > .left,
+.window .frame > .right {
+	width: 5px;
+}
+
+.window .frame > .bottom {
+	height: 5px;
+}
+
+/* Window Frame - Left */
+.window .frame .left .background .column {
+	background-image: url(../../images/Themes/Blue/frameLeft.png);
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+	align-self: stretch;
+}
+
+.window .frame .left .background .left {
+	width: 2px;
+	background-size: 250% 200%;
+	background-position-x: 0;
+}
+
+.window .frame .left .background .center {
+	background-size: 500% 200%;
+	background-position-x: 50%;
+}
+
+.window .frame .left .background .right {
+	width: 2px;
+	background-size: 250% 200%;
+	background-position-x: 100%;
+}
+
+/* Active */
+.window.active .frame .left .background .left {
+	background-position-y: 0;
+}
+
+.window.active .frame .left .background .center {
+	background-position-y: 0;
+}
+
+.window.active .frame .left .background .right {
+	background-position-y: 0;
+}
+
+/* Inative */
+.window.inactive .frame .left .background .left {
+	background-position-y: 100%;
+}
+
+.window.inactive .frame .left .background .center {
+	background-position-y: 100%;
+}
+
+.window.inactive .frame .left .background .right {
+	background-position-y: 100%;
+}
+
+/* Window Frame - Right */
+.window .frame .right .background .column {
+	background-image: url(../../images/Themes/Blue/frameRight.png);
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+	align-self: stretch;
+}
+
+.window .frame .right .background .left {
+	width: 2px;
+	background-size: 250% 200%;
+	background-position-x: 0;
+}
+
+.window .frame .right .background .center {
+	background-size: 500% 200%;
+	background-position-x: 50%;
+}
+
+.window .frame .right .background .right {
+	width: 2px;
+	background-size: 250% 200%;
+	background-position-x: 100%;
+}
+
+/* Active */
+.window.active .frame .right .background .left {
+	background-position-y: 0;
+}
+
+.window.active .frame .right .background .center {
+	background-position-y: 0;
+}
+
+.window.active .frame .right .background .right {
+	background-position-y: 0;
+}
+
+/* Inative */
+.window.inactive .frame .right .background .left {
+	background-position-y: 100%;
+}
+
+.window.inactive .frame .right .background .center {
+	background-position-y: 100%;
+}
+
+.window.inactive .frame .right .background .right {
+	background-position-y: 100%;
+}
+
+/* Window Content */
+.window .content {
+	background-color: rgb(255, 255, 255);
 }

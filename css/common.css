@@ -21,11 +21,14 @@ body {
 	flex-direction: column;
 }
 
+.background.sliced .left,
+.background.sliced .right,
 .background.sliced .top,
 .background.sliced .bottom {
 	flex-shrink: 0;
 }
 
+.background.sliced .center,
 .background.sliced .middle {
 	flex-grow: 1;
 }
@@ -33,4 +36,8 @@ body {
 .background.sliced .column {
 	display: flex;
 	flex-direction: column;
+}
+
+#templates {
+	display: none;
 }
