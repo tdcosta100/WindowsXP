@@ -1,0 +1,52 @@
+#taskbar {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+#start-button {
+	flex-shrink: 0;
+}
+
+#start-button .container {
+	position: relative;
+	overflow: hidden;
+}
+
+#start-button .overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#task-band {
+	flex-grow: 1;
+}
+
+#tray-notify {
+	flex-shrink: 0;
+}
+
+#tray-notify .container {
+	position: relative;
+	overflow: hidden;
+}
+
+#tray-notify .clock {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	height: 100%;
+}
+
+#tray-notify .clock .overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}

@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Franklin Gothic Medium';
+	src: url(../fonts/framdit.ttf) format('truetype');
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Tahoma';
+	src: url(../fonts/tahoma.ttf) format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
