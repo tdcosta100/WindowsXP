@@ -53,8 +53,6 @@ https://github.com/tdcosta100
 				$("#desktop").css("background-repeat", "no-repeat");
 				break;
 		}
-		
-		console.log(wallpaperStyle);
 	}
 	
 	changeWallpaperStyle();
