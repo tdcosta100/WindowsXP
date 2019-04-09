@@ -386,14 +386,35 @@ https://github.com/tdcosta100
 	background-position-y: 100%;
 }
 
-/* Window Frame */
-.window .frame > .left,
-.window .frame > .right {
-	width: 5px;
+.window .caption .container {
+	margin: 4px 4px 0 6px;
+	height: 25px;
 }
 
-.window .frame > .bottom {
-	height: 5px;
+.window .caption .content {
+	font-family: 'Trebuchet MS';
+	font-size: 10pt;
+	font-weight: bold;
+	line-height: 23px;
+	margin: 1px;
+}
+
+.window.active .caption .content {
+	color: rgb(255, 255, 255);
+}
+
+.window.inactive .caption .content {
+	color: rgb(216, 228, 248);
+}
+
+/* Window Frame */
+.window .frame .border.left,
+.window .frame .border.right {
+	width: 3px;
+}
+
+.window .frame .border.bottom {
+	height: 3px;
 }
 
 /* Window Frame - Left */
@@ -401,7 +422,6 @@ https://github.com/tdcosta100
 	background-image: url(../../images/Themes/Blue/frameLeft.png);
 	background-repeat: no-repeat;
 	image-rendering: pixelated;
-	align-self: stretch;
 }
 
 .window .frame .left .background .left {
@@ -499,6 +519,6 @@ https://github.com/tdcosta100
 }
 
 /* Window Content */
-.window .content {
+.window .frame .content {
 	background-color: rgb(255, 255, 255);
 }

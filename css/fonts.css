@@ -16,3 +16,17 @@ https://github.com/tdcosta100
 	font-style: normal;
 	font-weight: normal;
 }
+
+@font-face {
+	font-family: 'Tahoma';
+	src: url(../fonts/tahomabd.ttf) format('truetype');
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Trebuchet MS';
+	src: url(../fonts/trebucbd.ttf) format('truetype');
+	font-style: normal;
+	font-weight: bold;
+}

@@ -4,7 +4,7 @@ https://github.com/tdcosta100
 */
 
 .window {
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
 	position: absolute;
 }
@@ -13,9 +13,20 @@ https://github.com/tdcosta100
 	position: relative;
 }
 
+.window .caption .content {
+	position: relative;
+}
+
 .window .frame {
+	flex-grow: 1;
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.window .frame .container {
+	display: flex;
+	position: relative;
+	align-items: stretch;
 	flex-grow: 1;
 }
 
@@ -23,12 +34,11 @@ https://github.com/tdcosta100
 	flex-grow: 1;
 }
 
-.window .frame .left,
-.window .frame .right {
+.window .frame .border.left,
+.window .frame .border.right {
 	position: relative;
 }
 
-.window .frame .bottom {
+.window .frame .border.bottom {
 	position: relative;
-	width: 100%;
 }
