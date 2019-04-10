@@ -25,7 +25,7 @@ body {
 .background.sliced .right,
 .background.sliced .top,
 .background.sliced .bottom {
-	flex-shrink: 0;
+	flex-shrink: 1;
 }
 
 .background.sliced .center,
