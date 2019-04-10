@@ -13,8 +13,18 @@ https://github.com/tdcosta100
 	position: relative;
 }
 
-.window .caption .content {
+.window .caption .container {
+	display: flex;
+}
+
+.window .caption .icon,
+.window .caption .content,
+.window .caption .buttons {
 	position: relative;
+}
+
+.window .caption .content {
+	flex-grow: 1;
 }
 
 .window .frame {
@@ -26,7 +36,6 @@ https://github.com/tdcosta100
 .window .frame .container {
 	display: flex;
 	position: relative;
-	align-items: stretch;
 	flex-grow: 1;
 }
 

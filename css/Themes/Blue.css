@@ -289,123 +289,129 @@ https://github.com/tdcosta100
 /* Window */
 
 /* Window Caption - Sizes */
-.window .caption .background .left {
+.window .caption > .background .left {
 	width: 28px;
 }
 
-.window .caption .background .right {
+.window .caption > .background .right {
 	width: 35px;
 }
 
-.window .caption .background .top {
+.window .caption > .background .top {
 	height: 9px;
 }
 
-.window .caption .background .bottom {
+.window .caption > .background .bottom {
 	height: 17px;
 }
 
 /* Window Caption - Background */
-.window .caption .background .row {
+.window .caption > .background .row {
 	background-image: url(../../images/Themes/Blue/FrameCaption.png);
 	background-repeat: no-repeat;
 	image-rendering: pixelated;
 }
 
 /* All States */
-.window .caption .background .left .top {
+.window .caption > .background .left .top {
 	background-size: 235.714286% 644.444444%;
 }
 
-.window .caption .background .left .middle {
+.window .caption > .background .left .middle {
 	background-size: 235.714286% 1933.333333%;
 }
 
-.window .caption .background .left .bottom {
+.window .caption > .background .left .bottom {
 	background-size: 235.714286% 341.176471%;
 }
 
-.window .caption .background .center .top {
+.window .caption > .background .center .top {
 	background-size: 2200% 644.444444%;
 }
 
-.window .caption .background .center .middle {
+.window .caption > .background .center .middle {
 	background-size: 2200% 1933.333333%;
 }
 
-.window .caption .background .center .bottom {
+.window .caption > .background .center .bottom {
 	background-size: 2200% 341.176471%;
 }
 
-.window .caption .background .right .top {
+.window .caption > .background .right .top {
 	background-size: 188.571429% 644.444444%;
 }
 
-.window .caption .background .right .middle {
+.window .caption > .background .right .middle {
 	background-size: 188.571429% 1933.333333%;
 }
 
-.window .caption .background .right .bottom {
+.window .caption > .background .right .bottom {
 	background-size: 188.571429% 341.176471%;
 }
 
-.window .caption .background .left .row {
+.window .caption > .background .left .row {
 	background-position-x: 0;
 }
 
-.window .caption .background .center .row {
+.window .caption > .background .center .row {
 	background-position-x: 44.444444%;
 }
 
-.window .caption .background .right .row {
+.window .caption > .background .right .row {
 	background-position-x: 100%;
 }
 
 /* Active */
-.window.active .caption .background .top {
+.window.active .caption > .background .top {
 	background-position-y: 0;
 }
 
-.window.active .caption .background .middle {
+.window.active .caption > .background .middle {
 	background-position-y: 16.363636%;
 }
 
-.window.active .caption .background .bottom {
+.window.active .caption > .background .bottom {
 	background-position-y: 29.268293%;
 }
 
 /* Inactive */
-.window.inactive .caption .background .top {
+.window.inactive .caption > .background .top {
 	background-position-y: 59.183673%;
 }
 
-.window.inactive .caption .background .middle {
+.window.inactive .caption > .background .middle {
 	background-position-y: 69.090909%;
 }
 
-.window.inactive .caption .background .bottom {
+.window.inactive .caption > .background .bottom {
 	background-position-y: 100%;
 }
 
-.window .caption .container {
+.window .caption > .container {
 	margin: 4px 4px 0 6px;
-	height: 25px;
+	height: 26px;
 }
 
-.window .caption .content {
+.window .caption > .container > .content {
 	font-family: 'Trebuchet MS';
 	font-size: 10pt;
 	font-weight: bold;
-	line-height: 23px;
+	line-height: 24px;
 	margin: 1px;
+	text-shadow: 1px 1px rgb(10, 24, 131);
 }
 
-.window.active .caption .content {
+.window.active .caption > .container > .content {
 	color: rgb(255, 255, 255);
 }
 
-.window.inactive .caption .content {
+.window.inactive .caption > .container > .content {
 	color: rgb(216, 228, 248);
+}
+
+.window .caption > .container > .buttons {
+	align-self: flex-start;
+	margin: 2px 2px 0 0;
 }
 
 /* Window Frame */
@@ -430,6 +436,7 @@ https://github.com/tdcosta100
 	width: 2px;
 	background-size: 250% 200%;
 	background-position-x: 0;
+	flex-shrink: 2;
 }
 
 .window .frame .left .background .center {
@@ -481,6 +488,7 @@ https://github.com/tdcosta100
 	width: 2px;
 	background-size: 250% 200%;
 	background-position-x: 0;
+	flex-shrink: 2;
 }
 
 .window .frame .right .background .center {
@@ -538,6 +546,7 @@ https://github.com/tdcosta100
 
 .window .frame .bottom .background .top {
 	height: 2px;
+	flex-shrink: 2;
 }
 
 .window .frame .bottom .background .bottom {
@@ -637,6 +646,243 @@ https://github.com/tdcosta100
 }
 
 /* Window Content */
+.window.dialog .caption > .container {
+	height: 25px;
+}
+
+.window.dialog .caption > .container > .buttons {
+	margin: 1px 1px 0 0;
+}
+
+.window.dialog .caption > .container > .content {
+	line-height: 23px;
+}
+
 .window.dialog .frame .content {
 	background-color: rgb(236, 233, 216);
 }
+
+/* Close Button */
+.close-button {
+	display: flex;
+	justify-content: stretch;
+}
+
+/* Content */
+.close-button {
+	position: relative;
+	width: 21px;
+	height: 21px;
+	flex-shrink: 0;
+}
+
+.close-button .content {
+	margin: 2px;
+}
+
+/* Background */
+/* Sizes */
+.close-button .background .left,
+.close-button .background .right {
+	width: 5px;
+}
+
+.close-button .background .top,
+.close-button .background .bottom {
+	height: 5px;
+}
+
+.close-button .background .row {
+	background-image: url(../../images/Themes/Blue/CloseButton.png);
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+}
+
+/* All States */
+.close-button .background .left .top,
+.close-button .background .left .bottom,
+.close-button .background .right .top,
+.close-button .background .right .bottom {
+	background-size: 420% 3360%;
+}
+
+.close-button .background .left .middle,
+.close-button .background .right .middle {
+	background-size: 420% 1527.272727%;
+}
+
+.close-button .background .center .top,
+.close-button .background .center .bottom {
+	background-size: 190.909091% 3360%;
+}
+
+.close-button .background .center .middle {
+	background-size: 190.909091% 1527.272727%;
+}
+
+.close-button .background .left .row {
+	background-position-x: 0;
+}
+
+.close-button .background .center .row {
+	background-position-x: 50%;
+}
+
+.close-button .background .right .row {
+	background-position-x: 100%;
+}
+
+/* Active */
+/* Normal */
+.close-button .background .top {
+	background-position-y: 0;
+}
+
+.close-button .background .middle {
+	background-position-y: 3.184713%;
+}
+
+.close-button .background .bottom {
+	background-position-y: 9.815951%;
+}
+
+/* Hover */
+.close-button.hover .background .top {
+	background-position-y: 12.883436%;
+}
+
+.close-button.hover .background .middle {
+	background-position-y: 16.560510%;
+}
+
+.close-button.hover .background .bottom {
+	background-position-y: 22.699387%;
+}
+
+
+/* Pressed */
+.close-button.pressed .background .top {
+	background-position-y: 25.766871%;
+}
+
+.close-button.pressed .background .middle {
+	background-position-y: 29.936306%;
+}
+
+.close-button.pressed .background .bottom {
+	background-position-y: 35.582822%;
+}
+
+/* Disabled */
+.close-button.disabled .background .top {
+	background-position-y: 38.650307%;
+}
+
+.close-button.disabled .background .middle {
+	background-position-y: 43.312102%;
+}
+
+.close-button.disabled .background .bottom {
+	background-position-y: 48.466258%;
+}
+
+/* Inactive */
+/* Normal */
+.inactive .close-button .background .top {
+	background-position-y: 51.533742%;
+}
+
+.inactive .close-button .background .middle {
+	background-position-y: 56.687898%;
+}
+
+.inactive .close-button .background .bottom {
+	background-position-y: 61.349693%;
+}
+
+/* Hover */
+.inactive .close-button.hover .background .top {
+	background-position-y: 64.417178%;
+}
+
+.inactive .close-button.hover .background .middle {
+	background-position-y: 70.063694%;
+}
+
+.inactive .close-button.hover .background .bottom {
+	background-position-y: 74.233129%;
+}
+
+
+/* Pressed */
+.inactive .close-button.pressed .background .top {
+	background-position-y: 77.300613%;
+}
+
+.inactive .close-button.pressed .background .middle {
+	background-position-y: 83.439490%;
+}
+
+.inactive .close-button.pressed .background .bottom {
+	background-position-y: 87.116564%;
+}
+
+/* Disabled */
+.inactive .close-button.disabled .background .top {
+	background-position-y: 90.184049%;
+}
+
+.inactive .close-button.disabled .background .middle {
+	background-position-y: 96.815287%;
+}
+
+.inactive .close-button.disabled .background .bottom {
+	background-position-y: 100%;
+}
+
+.close-button .content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.close-button .content .glyph {
+	width: 13px;
+	height: 13px;
+	background-image: url(../../images/Themes/Blue/CloseGlyph.png);
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+}
+
+.close-button .content .glyph {
+	background-position-y: 0;
+}
+
+.close-button.hover .content .glyph {
+	background-position-y: 14.285714%;
+}
+
+.close-button.pressed .content .glyph {
+	background-position-y: 28.571429%;
+}
+
+.close-button.disabled .content .glyph {
+	background-position-y: 42.857143%;
+}
+
+.inactive .close-button .content .glyph {
+	background-position-y: 57.142857%;
+}
+
+.inactive .close-button.hover .content .glyph {
+	background-position-y: 71.428571%;
+}
+
+.inactive .close-button.pressed .content .glyph {
+	background-position-y: 85.714286%;
+}
+
+.inactive .close-button.disabled .content .glyph {
+	background-position-y: 100%;
+}
+
