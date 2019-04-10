@@ -411,7 +411,19 @@ https://github.com/tdcosta100
 
 .window .caption > .container > .buttons {
 	align-self: flex-start;
-	margin: 2px 2px 0 0;
+	display: flex;
+	flex-direction: row-reverse;
+	margin: 1px 1px 0 0;
+}
+
+.window .caption > .container > .buttons > .caption-button {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: stretch;
+	position: relative;
+	width: 21px;
+	height: 21px;
+	margin: 1px;
 }
 
 /* Window Frame */
@@ -651,7 +663,7 @@ https://github.com/tdcosta100
 }
 
 .window.dialog .caption > .container > .buttons {
-	margin: 1px 1px 0 0;
+	margin: 0;
 }
 
 .window.dialog .caption > .container > .content {
@@ -662,227 +674,291 @@ https://github.com/tdcosta100
 	background-color: rgb(236, 233, 216);
 }
 
-/* Close Button */
-.close-button {
-	display: flex;
-	justify-content: stretch;
+/* Maximized */
+.window.maximized {
+	bottom: 30px !important;
+}
+
+.window.maximized .caption > .background .row {
+	background-image: url(../../images/Themes/Blue/FrameMaximized.png);
+}
+
+.window.maximized .caption > .container {
+	margin: 0 0 0 1px;
+}
+
+.window.maximized .frame .border {
+	display: none;
+}
+
+/* Window Animation */
+.window.animation {
+	height: 30px;
+	z-index: 1000;
+}
+
+.window.animation .caption {
+	flex-grow: 1;
+	margin: 5px 4px 0 4px;
+}
+
+.window.animation .caption .background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to right, rgb(0, 84, 227), rgb(61, 149, 255));
+}
+
+.window.animation .caption .container {
+	margin: 0;
+	height: 25px;
+}
+
+.window.animation .caption .container .content {
+	margin-left: 2px;
+	margin-top: 0;
+	color: rgb(255, 255, 255);
+	text-shadow: none;
+}
+
+/* Caption Button */
+.caption-button {
 }
 
 /* Content */
-.close-button {
-	position: relative;
-	width: 21px;
-	height: 21px;
-	flex-shrink: 0;
-}
-
-.close-button .content {
+.caption-button .content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: 2px;
 }
 
 /* Background */
 /* Sizes */
-.close-button .background .left,
-.close-button .background .right {
+.caption-button .background .left,
+.caption-button .background .right {
 	width: 5px;
 }
 
-.close-button .background .top,
-.close-button .background .bottom {
+.caption-button .background .top,
+.caption-button .background .bottom {
 	height: 5px;
 }
 
-.close-button .background .row {
-	background-image: url(../../images/Themes/Blue/CloseButton.png);
+.caption-button .background .row {
+	background-image: url(../../images/Themes/Blue/CaptionButton.png);
 	background-repeat: no-repeat;
 	image-rendering: pixelated;
 }
 
 /* All States */
-.close-button .background .left .top,
-.close-button .background .left .bottom,
-.close-button .background .right .top,
-.close-button .background .right .bottom {
+.caption-button .background .left .top,
+.caption-button .background .left .bottom,
+.caption-button .background .right .top,
+.caption-button .background .right .bottom {
 	background-size: 420% 3360%;
 }
 
-.close-button .background .left .middle,
-.close-button .background .right .middle {
+.caption-button .background .left .middle,
+.caption-button .background .right .middle {
 	background-size: 420% 1527.272727%;
 }
 
-.close-button .background .center .top,
-.close-button .background .center .bottom {
+.caption-button .background .center .top,
+.caption-button .background .center .bottom {
 	background-size: 190.909091% 3360%;
 }
 
-.close-button .background .center .middle {
+.caption-button .background .center .middle {
 	background-size: 190.909091% 1527.272727%;
 }
 
-.close-button .background .left .row {
+.caption-button .background .left .row {
 	background-position-x: 0;
 }
 
-.close-button .background .center .row {
+.caption-button .background .center .row {
 	background-position-x: 50%;
 }
 
-.close-button .background .right .row {
+.caption-button .background .right .row {
 	background-position-x: 100%;
 }
 
 /* Active */
 /* Normal */
-.close-button .background .top {
+.caption-button .background .top {
 	background-position-y: 0;
 }
 
-.close-button .background .middle {
+.caption-button .background .middle {
 	background-position-y: 3.184713%;
 }
 
-.close-button .background .bottom {
+.caption-button .background .bottom {
 	background-position-y: 9.815951%;
 }
 
 /* Hover */
-.close-button.hover .background .top {
+.caption-button.hover .background .top {
 	background-position-y: 12.883436%;
 }
 
-.close-button.hover .background .middle {
+.caption-button.hover .background .middle {
 	background-position-y: 16.560510%;
 }
 
-.close-button.hover .background .bottom {
+.caption-button.hover .background .bottom {
 	background-position-y: 22.699387%;
 }
 
 
 /* Pressed */
-.close-button.pressed .background .top {
+.caption-button.pressed .background .top {
 	background-position-y: 25.766871%;
 }
 
-.close-button.pressed .background .middle {
+.caption-button.pressed .background .middle {
 	background-position-y: 29.936306%;
 }
 
-.close-button.pressed .background .bottom {
+.caption-button.pressed .background .bottom {
 	background-position-y: 35.582822%;
 }
 
 /* Disabled */
-.close-button.disabled .background .top {
+.caption-button.disabled .background .top {
 	background-position-y: 38.650307%;
 }
 
-.close-button.disabled .background .middle {
+.caption-button.disabled .background .middle {
 	background-position-y: 43.312102%;
 }
 
-.close-button.disabled .background .bottom {
+.caption-button.disabled .background .bottom {
 	background-position-y: 48.466258%;
 }
 
 /* Inactive */
 /* Normal */
-.inactive .close-button .background .top {
+.inactive .caption-button .background .top {
 	background-position-y: 51.533742%;
 }
 
-.inactive .close-button .background .middle {
+.inactive .caption-button .background .middle {
 	background-position-y: 56.687898%;
 }
 
-.inactive .close-button .background .bottom {
+.inactive .caption-button .background .bottom {
 	background-position-y: 61.349693%;
 }
 
 /* Hover */
-.inactive .close-button.hover .background .top {
+.inactive .caption-button.hover .background .top {
 	background-position-y: 64.417178%;
 }
 
-.inactive .close-button.hover .background .middle {
+.inactive .caption-button.hover .background .middle {
 	background-position-y: 70.063694%;
 }
 
-.inactive .close-button.hover .background .bottom {
+.inactive .caption-button.hover .background .bottom {
 	background-position-y: 74.233129%;
 }
 
 
 /* Pressed */
-.inactive .close-button.pressed .background .top {
+.inactive .caption-button.pressed .background .top {
 	background-position-y: 77.300613%;
 }
 
-.inactive .close-button.pressed .background .middle {
+.inactive .caption-button.pressed .background .middle {
 	background-position-y: 83.439490%;
 }
 
-.inactive .close-button.pressed .background .bottom {
+.inactive .caption-button.pressed .background .bottom {
 	background-position-y: 87.116564%;
 }
 
 /* Disabled */
-.inactive .close-button.disabled .background .top {
+.inactive .caption-button.disabled .background .top {
 	background-position-y: 90.184049%;
 }
 
-.inactive .close-button.disabled .background .middle {
+.inactive .caption-button.disabled .background .middle {
 	background-position-y: 96.815287%;
 }
 
-.inactive .close-button.disabled .background .bottom {
+.inactive .caption-button.disabled .background .bottom {
 	background-position-y: 100%;
 }
 
-.close-button .content {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.close-button .content .glyph {
+/* Caption Button - Glyph */
+.caption-button .content .glyph {
 	width: 13px;
 	height: 13px;
-	background-image: url(../../images/Themes/Blue/CloseGlyph.png);
 	background-repeat: no-repeat;
 	image-rendering: pixelated;
 }
 
-.close-button .content .glyph {
+.caption-button .content .glyph {
 	background-position-y: 0;
 }
 
-.close-button.hover .content .glyph {
+.caption-button.hover .content .glyph {
 	background-position-y: 14.285714%;
 }
 
-.close-button.pressed .content .glyph {
+.caption-button.pressed .content .glyph {
 	background-position-y: 28.571429%;
 }
 
-.close-button.disabled .content .glyph {
+.caption-button.disabled .content .glyph {
 	background-position-y: 42.857143%;
 }
 
-.inactive .close-button .content .glyph {
+.inactive .caption-button .content .glyph {
 	background-position-y: 57.142857%;
 }
 
-.inactive .close-button.hover .content .glyph {
+.inactive .caption-button.hover .content .glyph {
 	background-position-y: 71.428571%;
 }
 
-.inactive .close-button.pressed .content .glyph {
+.inactive .caption-button.pressed .content .glyph {
 	background-position-y: 85.714286%;
 }
 
-.inactive .close-button.disabled .content .glyph {
+.inactive .caption-button.disabled .content .glyph {
 	background-position-y: 100%;
+}
+
+/* Close Button */
+.close-button .background .row {
+	background-image: url(../../images/Themes/Blue/CloseButton.png);
+}
+
+.close-button .content .glyph {
+	background-image: url(../../images/Themes/Blue/CloseGlyph.png);
+}
+
+/* Maximize Button */
+.max-button .content .glyph {
+	background-image: url(../../images/Themes/Blue/MaximizeGlyph.png);
+}
+
+/* Restore Button */
+.restore-button .content .glyph {
+	background-image: url(../../images/Themes/Blue/RestoreGlyph.png);
+}
+
+/* Minimize Button */
+.min-button .content .glyph {
+	background-image: url(../../images/Themes/Blue/MinimizeGlyph.png);
+}
+
+/* Help Button */
+.help-button .content .glyph {
+	background-image: url(../../images/Themes/Blue/HelpGlyph.png);
 }
 

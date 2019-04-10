@@ -9,6 +9,7 @@ https://github.com/tdcosta100
 	position: absolute;
 }
 
+/* Caption */
 .window .caption {
 	position: relative;
 }
@@ -25,8 +26,10 @@ https://github.com/tdcosta100
 
 .window .caption .content {
 	flex-grow: 1;
+	user-select: none;
 }
 
+/* Frame */
 .window .frame {
 	flex-grow: 1;
 	display: flex;
@@ -50,4 +53,18 @@ https://github.com/tdcosta100
 
 .window .frame .border.bottom {
 	position: relative;
+}
+
+/* Maximized */
+.window.maximized {
+	left: 0 !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	width: auto !important;
+	height: auto !important;
+}
+
+.window.maximized .frame .border {
+	display: none;
 }
