@@ -1,0 +1,964 @@
+/*
+Made by Tiago Costa
+https://github.com/tdcosta100
+*/
+
+/* Desktop */
+#desktop {
+	background-image: url(../../images/Wallpapers/Bliss.jpg);
+	background-size: cover;
+}
+
+/* Taskbar */
+#taskbar {
+	height: 30px;
+}
+
+#taskbar > .background .row {
+	background-image: url(../../images/Themes/Metallic/TaskbarBackground.png);
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+}
+
+#taskbar > .background .top {
+	height: 15px;
+	background-size: 100% 186.666667%;
+}
+
+#taskbar > .background .middle {
+	background-size: 100% 1400%;
+	background-position-y: 57.692308%;
+}
+
+#taskbar > .background .bottom {
+	height: 11px;
+	background-size: 100% 254.545455%;
+	background-position-y: 100%;
+}
+
+/* Start Button */
+#start-button {
+}
+
+/* Start Button - Sizes */
+#start-button .background .left {
+	width: 6px;
+}
+
+#start-button .background .right {
+	width: 52px;
+}
+
+#start-button .background .top {
+	height: 13px;
+}
+
+#start-button .background .bottom {
+	height: 14px;
+}
+
+/* Start Button - Content */
+#start-button .content {
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin: 2px 24px 4px 10px;
+	height: 26px;
+}
+
+#start-button .content .icon img {
+	display: block;
+	image-rendering: pixelated;
+}
+
+#start-button .content .text {
+	color: rgb(255, 255, 255);
+	font-family: 'Franklin Gothic Medium';
+	font-style: italic;
+	font-size: 14pt;
+	text-shadow: 1px 2px 2px rgb(69, 76, 16), 0 0 3px rgb(69, 76, 16);
+	margin-bottom: 1px;
+	padding-right: 3px;
+}
+
+/* Start Button - Background */
+#start-button .background .row {
+	background-image: url(../../images/Themes/Metallic/StartButton.png);
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+}
+
+/* All States */
+#start-button .background .left .top {
+	background-size: 1650% 761.538462%;
+}
+
+#start-button .background .left .middle {
+	background-size: 1650% 1650%;
+}
+
+#start-button .background .left .bottom {
+	background-size: 1650% 707.142857%;
+}
+
+#start-button .background .center .top {
+	background-size: 241.463415% 761.538462%;
+}
+
+#start-button .background .center .middle {
+	background-size: 241.463415% 1650%;
+}
+
+#start-button .background .center .bottom {
+	background-size: 241.463415% 707.142857%;
+}
+
+#start-button .background .right .top {
+	background-size: 190.384615% 761.538462%;
+}
+
+#start-button .background .right .middle {
+	background-size: 190.384615% 1650%;
+}
+
+#start-button .background .right .bottom {
+	background-size: 190.384615% 707.142857%;
+}
+
+#start-button .background .left .row {
+	background-position-x: 0;
+}
+
+#start-button .background .center .row {
+	background-position-x: 10.344828%;
+}
+
+#start-button .background .right .row {
+	background-position-x: 100%;
+}
+
+/* Normal */
+#start-button .background .top {
+	background-position-y: 0;
+}
+
+#start-button .background .middle {
+	background-position-y: 13.978495%;
+}
+
+#start-button .background .bottom {
+	background-position-y: 22.352941%;
+}
+
+/* Hover */
+#start-button.hover .background .top {
+	background-position-y: 38.372093%;
+}
+
+#start-button.hover .background .middle {
+	background-position-y: 49.462366%;
+}
+
+#start-button.hover .background .bottom {
+	background-position-y: 61.176471%;
+}
+
+
+/* Pressed */
+#start-button.pressed .background .top {
+	background-position-y: 76.744186%;
+}
+
+#start-button.pressed .background .middle {
+	background-position-y: 84.946237%;
+}
+
+#start-button.pressed .background .bottom {
+	background-position-y: 100%;
+}
+
+/* Tray Notify */
+#tray-notify {
+}
+
+#tray-notify .container {
+	height: 100%;
+}
+
+/* Tray Notify - Sizes */
+#tray-notify .background .left {
+	width: 34px;
+}
+
+#tray-notify .background .right {
+	width: 10px;
+}
+
+#tray-notify .background .top {
+	height: 12px;
+}
+
+#tray-notify .background .bottom {
+	height: 12px;
+}
+
+/* Tray Notify - Background */
+#tray-notify .background .row {
+	background-image: url(../../images/Themes/Metallic/TaskbarTray.png);
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+}
+
+#tray-notify .background .left .top {
+	background-size: 323.529412% 233.333333%;
+}
+
+#tray-notify .background .left .middle {
+	background-size: 323.529412% 700%;
+}
+
+#tray-notify .background .left .bottom {
+	background-size: 323.529412% 233.333333%;
+}
+
+#tray-notify .background .center .top {
+	background-size: 166.666667% 233.333333%;
+}
+
+#tray-notify .background .center .middle {
+	background-size: 166.666667% 700%;
+}
+
+#tray-notify .background .center .bottom {
+	background-size: 166.666667% 233.333333%;
+}
+
+#tray-notify .background .right .top {
+	background-size: 1100% 233.333333%;
+}
+
+#tray-notify .background .right .middle {
+	background-size: 1100% 700%;
+}
+
+#tray-notify .background .right .bottom {
+	background-size: 1100% 233.333333%;
+}
+
+#tray-notify .background .left .row {
+	background-position-x: 0;
+}
+
+#tray-notify .background .center .row {
+	background-position-x: 77.272727%;
+}
+
+#tray-notify .background .right .row {
+	background-position-x: 100%;
+}
+
+#tray-notify .background .top {
+	background-position-y: 0;
+}
+
+#tray-notify .background .middle {
+	background-position-y: 50%;
+}
+
+#tray-notify .background .bottom {
+	background-position-y: 100%;
+}
+
+#tray-notify .content {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	position: relative;
+	margin: 0 7px 0 19px;
+	height: 30px;
+	font-family: 'Tahoma';
+	font-size: 8pt;
+	color: rgb(0, 0, 0);
+}
+
+#tray-notify .clock {
+	width: 40px;
+	text-align: center;
+}
+
+/* Window */
+
+/* Window Caption - Sizes */
+.window .caption > .background .left {
+	width: 28px;
+}
+
+.window .caption > .background .right {
+	width: 35px;
+}
+
+.window .caption > .background .top {
+	height: 9px;
+}
+
+.window .caption > .background .bottom {
+	height: 17px;
+}
+
+/* Window Caption - Background */
+.window .caption > .background .row {
+	background-image: url(../../images/Themes/Metallic/FrameCaption.png);
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+}
+
+/* All States */
+.window .caption > .background .left .top {
+	background-size: 235.714286% 644.444444%;
+}
+
+.window .caption > .background .left .middle {
+	background-size: 235.714286% 1933.333333%;
+}
+
+.window .caption > .background .left .bottom {
+	background-size: 235.714286% 341.176471%;
+}
+
+.window .caption > .background .center .top {
+	background-size: 2200% 644.444444%;
+}
+
+.window .caption > .background .center .middle {
+	background-size: 2200% 1933.333333%;
+}
+
+.window .caption > .background .center .bottom {
+	background-size: 2200% 341.176471%;
+}
+
+.window .caption > .background .right .top {
+	background-size: 188.571429% 644.444444%;
+}
+
+.window .caption > .background .right .middle {
+	background-size: 188.571429% 1933.333333%;
+}
+
+.window .caption > .background .right .bottom {
+	background-size: 188.571429% 341.176471%;
+}
+
+.window .caption > .background .left .row {
+	background-position-x: 0;
+}
+
+.window .caption > .background .center .row {
+	background-position-x: 44.444444%;
+}
+
+.window .caption > .background .right .row {
+	background-position-x: 100%;
+}
+
+/* Active */
+.window.active .caption > .background .top {
+	background-position-y: 0;
+}
+
+.window.active .caption > .background .middle {
+	background-position-y: 16.363636%;
+}
+
+.window.active .caption > .background .bottom {
+	background-position-y: 29.268293%;
+}
+
+/* Inactive */
+.window.inactive .caption > .background .top {
+	background-position-y: 59.183673%;
+}
+
+.window.inactive .caption > .background .middle {
+	background-position-y: 69.090909%;
+}
+
+.window.inactive .caption > .background .bottom {
+	background-position-y: 100%;
+}
+
+.window .caption > .container {
+	margin: 4px 4px 0 6px;
+	height: 26px;
+}
+
+.window .caption > .container > .content {
+	font-family: 'Trebuchet MS';
+	font-size: 10pt;
+	font-weight: bold;
+	line-height: 24px;
+	margin: 1px;
+	text-shadow: 1px 1px rgb(199, 194, 209);
+}
+
+.window.active .caption > .container > .content {
+	color: rgb(14, 16, 16);
+}
+
+.window.inactive .caption > .container > .content {
+	color: rgb(162, 161, 161);
+}
+
+.window .caption > .container > .buttons {
+	align-self: flex-start;
+	display: flex;
+	flex-direction: row-reverse;
+	margin: 1px 1px 0 0;
+}
+
+.window .caption > .container > .buttons > .caption-button {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: stretch;
+	position: relative;
+	width: 21px;
+	height: 21px;
+	margin: 1px;
+}
+
+/* Window Frame */
+.window .frame .border.left,
+.window .frame .border.right {
+	width: 4px;
+}
+
+.window .frame .border.bottom {
+	height: 4px;
+}
+
+/* Window Frame - Left */
+.window .frame .left .background .column {
+	background-image: url(../../images/Themes/Metallic/frameLeft.png);
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+}
+
+/* All States */
+.window .frame .left .background .left {
+	width: 2px;
+	background-size: 250% 200%;
+	background-position-x: 0;
+	flex-shrink: 2;
+}
+
+.window .frame .left .background .center {
+	background-size: 500% 200%;
+	background-position-x: 50%;
+}
+
+.window .frame .left .background .right {
+	width: 2px;
+	background-size: 250% 200%;
+	background-position-x: 100%;
+}
+
+/* Active */
+.window.active .frame .left .background .left {
+	background-position-y: 0;
+}
+
+.window.active .frame .left .background .center {
+	background-position-y: 0;
+}
+
+.window.active .frame .left .background .right {
+	background-position-y: 0;
+}
+
+/* Inative */
+.window.inactive .frame .left .background .left {
+	background-position-y: 100%;
+}
+
+.window.inactive .frame .left .background .center {
+	background-position-y: 100%;
+}
+
+.window.inactive .frame .left .background .right {
+	background-position-y: 100%;
+}
+
+/* Window Frame - Right */
+.window .frame .right .background .column {
+	background-image: url(../../images/Themes/Metallic/frameRight.png);
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+}
+
+/* All States */
+.window .frame .right .background .left {
+	width: 2px;
+	background-size: 250% 200%;
+	background-position-x: 0;
+	flex-shrink: 2;
+}
+
+.window .frame .right .background .center {
+	background-size: 500% 200%;
+	background-position-x: 50%;
+}
+
+.window .frame .right .background .right {
+	width: 2px;
+	background-size: 250% 200%;
+	background-position-x: 100%;
+}
+
+/* Active */
+.window.active .frame .right .background .left {
+	background-position-y: 0;
+}
+
+.window.active .frame .right .background .center {
+	background-position-y: 0;
+}
+
+.window.active .frame .right .background .right {
+	background-position-y: 0;
+}
+
+/* Inative */
+.window.inactive .frame .right .background .left {
+	background-position-y: 100%;
+}
+
+.window.inactive .frame .right .background .center {
+	background-position-y: 100%;
+}
+
+.window.inactive .frame .right .background .right {
+	background-position-y: 100%;
+}
+
+/* Window Frame - Bottom */
+.window .frame .bottom .background .row {
+	background-image: url(../../images/Themes/Metallic/frameBottom.png);
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+}
+
+/* Window Frame - Bottom - Sizes */
+.window .frame .bottom .background .left {
+	width: 5px;
+}
+
+.window .frame .bottom .background .right {
+	width: 5px;
+}
+
+.window .frame .bottom .background .top {
+	height: 2px;
+	flex-shrink: 2;
+}
+
+.window .frame .bottom .background .bottom {
+	height: 2px;
+}
+
+/* All States */
+.window .frame .bottom .background .left .top {
+	background-size: 980% 500%;
+}
+
+.window .frame .bottom .background .left .middle {
+	background-size: 980% 1000%;
+}
+
+.window .frame .bottom .background .left .bottom {
+	background-size: 980% 500%;
+}
+
+.window .frame .bottom .background .center .top {
+	background-size: 125.641026% 500%;
+}
+
+.window .frame .bottom .background .center .middle {
+	background-size: 125.641026% 1000%;
+}
+
+.window .frame .bottom .background .center .bottom {
+	background-size: 125.641026% 500%;
+}
+
+.window .frame .bottom .background .right .top {
+	background-size: 980% 500%;
+}
+
+.window .frame .bottom .background .right .middle {
+	background-size: 980% 1000%;
+}
+
+.window .frame .bottom .background .right .bottom {
+	background-size: 980% 500%;
+}
+
+.window .frame .bottom .background .left .row {
+	background-position-x: 0;
+}
+
+.window .frame .bottom .background .center .row {
+	background-position-x: 50%;
+}
+
+.window .frame .bottom .background .right .row {
+	background-position-x: 100%;
+}
+
+/* Active */
+.window.active .frame .bottom .background .top {
+	background-position-y: 0;
+}
+
+.window.active .frame .bottom .background .middle {
+	background-position-y: 22.222222%;
+}
+
+.window.active .frame .bottom .background .bottom {
+	background-position-y: 37.5%;
+}
+
+/* Inactive */
+.window.inactive .frame .bottom .background .top {
+	background-position-y: 62.5%;
+}
+
+.window.inactive .frame .bottom .background .middle {
+	background-position-y: 77.777778%;
+}
+
+.window.inactive .frame .bottom .background .bottom {
+	background-position-y: 100%;
+}
+
+/* Window Content */
+.window .frame .content {
+	background-color: rgb(255, 255, 255);
+}
+
+/* Dialog Window */
+
+/* Dialog Window Frame */
+.window.dialog .frame .border.left,
+.window.dialog .frame .border.right {
+	width: 3px;
+}
+
+.window.dialog .frame .border.bottom {
+	height: 3px;
+}
+
+/* Window Content */
+.window.dialog .caption > .container {
+	height: 25px;
+}
+
+.window.dialog .caption > .container > .buttons {
+	margin: 0;
+}
+
+.window.dialog .caption > .container > .content {
+	line-height: 23px;
+}
+
+.window.dialog .frame .content {
+	background-color: rgb(255, 233, 216);
+}
+
+/* Maximized */
+.window.maximized {
+	bottom: 30px !important;
+}
+
+.window.maximized .caption > .background .row {
+	background-image: url(../../images/Themes/Metallic/FrameMaximized.png);
+}
+
+.window.maximized .caption > .container {
+	margin: 0 0 0 1px;
+}
+
+.window.maximized .frame .border {
+	display: none;
+}
+
+/* Window Animation */
+.window.animation {
+	height: 30px;
+	z-index: 1000;
+}
+
+.window.animation .caption {
+	flex-grow: 1;
+	margin: 5px 4px 0 4px;
+}
+
+.window.animation .caption .background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to right, rgb(192, 192, 192), rgb(200, 200, 200));
+}
+
+.window.animation .caption .container {
+	margin: 0;
+	height: 25px;
+}
+
+.window.animation .caption .container .content {
+	margin-left: 2px;
+	margin-top: 0;
+	color: rgb(14, 16, 16);
+	text-shadow: none;
+}
+
+/* Caption Button */
+.caption-button {
+}
+
+/* Content */
+.caption-button .content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2px;
+}
+
+/* Background */
+/* Sizes */
+.caption-button .background .left,
+.caption-button .background .right {
+	width: 5px;
+}
+
+.caption-button .background .top,
+.caption-button .background .bottom {
+	height: 5px;
+}
+
+.caption-button .background .row {
+	background-image: url(../../images/Themes/Metallic/CaptionButton.png);
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+}
+
+/* All States */
+.caption-button .background .left .top,
+.caption-button .background .left .bottom,
+.caption-button .background .right .top,
+.caption-button .background .right .bottom {
+	background-size: 420% 3360%;
+}
+
+.caption-button .background .left .middle,
+.caption-button .background .right .middle {
+	background-size: 420% 1527.272727%;
+}
+
+.caption-button .background .center .top,
+.caption-button .background .center .bottom {
+	background-size: 190.909091% 3360%;
+}
+
+.caption-button .background .center .middle {
+	background-size: 190.909091% 1527.272727%;
+}
+
+.caption-button .background .left .row {
+	background-position-x: 0;
+}
+
+.caption-button .background .center .row {
+	background-position-x: 50%;
+}
+
+.caption-button .background .right .row {
+	background-position-x: 100%;
+}
+
+/* Active */
+/* Normal */
+.caption-button .background .top {
+	background-position-y: 0;
+}
+
+.caption-button .background .middle {
+	background-position-y: 3.184713%;
+}
+
+.caption-button .background .bottom {
+	background-position-y: 9.815951%;
+}
+
+/* Hover */
+.caption-button.hover .background .top {
+	background-position-y: 12.883436%;
+}
+
+.caption-button.hover .background .middle {
+	background-position-y: 16.560510%;
+}
+
+.caption-button.hover .background .bottom {
+	background-position-y: 22.699387%;
+}
+
+
+/* Pressed */
+.caption-button.pressed .background .top {
+	background-position-y: 25.766871%;
+}
+
+.caption-button.pressed .background .middle {
+	background-position-y: 29.936306%;
+}
+
+.caption-button.pressed .background .bottom {
+	background-position-y: 35.582822%;
+}
+
+/* Disabled */
+.caption-button.disabled .background .top {
+	background-position-y: 38.650307%;
+}
+
+.caption-button.disabled .background .middle {
+	background-position-y: 43.312102%;
+}
+
+.caption-button.disabled .background .bottom {
+	background-position-y: 48.466258%;
+}
+
+/* Inactive */
+/* Normal */
+.inactive .caption-button .background .top {
+	background-position-y: 51.533742%;
+}
+
+.inactive .caption-button .background .middle {
+	background-position-y: 56.687898%;
+}
+
+.inactive .caption-button .background .bottom {
+	background-position-y: 61.349693%;
+}
+
+/* Hover */
+.inactive .caption-button.hover .background .top {
+	background-position-y: 64.417178%;
+}
+
+.inactive .caption-button.hover .background .middle {
+	background-position-y: 70.063694%;
+}
+
+.inactive .caption-button.hover .background .bottom {
+	background-position-y: 74.233129%;
+}
+
+
+/* Pressed */
+.inactive .caption-button.pressed .background .top {
+	background-position-y: 77.300613%;
+}
+
+.inactive .caption-button.pressed .background .middle {
+	background-position-y: 83.439490%;
+}
+
+.inactive .caption-button.pressed .background .bottom {
+	background-position-y: 87.116564%;
+}
+
+/* Disabled */
+.inactive .caption-button.disabled .background .top {
+	background-position-y: 90.184049%;
+}
+
+.inactive .caption-button.disabled .background .middle {
+	background-position-y: 96.815287%;
+}
+
+.inactive .caption-button.disabled .background .bottom {
+	background-position-y: 100%;
+}
+
+/* Caption Button - Glyph */
+.caption-button .content .glyph {
+	width: 13px;
+	height: 13px;
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+}
+
+.caption-button .content .glyph {
+	background-position-y: 0;
+}
+
+.caption-button.hover .content .glyph {
+	background-position-y: 14.285714%;
+}
+
+.caption-button.pressed .content .glyph {
+	background-position-y: 28.571429%;
+}
+
+.caption-button.disabled .content .glyph {
+	background-position-y: 42.857143%;
+}
+
+.inactive .caption-button .content .glyph {
+	background-position-y: 57.142857%;
+}
+
+.inactive .caption-button.hover .content .glyph {
+	background-position-y: 71.428571%;
+}
+
+.inactive .caption-button.pressed .content .glyph {
+	background-position-y: 85.714286%;
+}
+
+.inactive .caption-button.disabled .content .glyph {
+	background-position-y: 100%;
+}
+
+/* Close Button */
+.close-button .background .row {
+	background-image: url(../../images/Themes/Metallic/CloseButton.png);
+}
+
+.close-button .content .glyph {
+	background-image: url(../../images/Themes/Metallic/CloseGlyph.png);
+}
+
+/* Maximize Button */
+.max-button .content .glyph {
+	background-image: url(../../images/Themes/Metallic/MaximizeGlyph.png);
+}
+
+/* Restore Button */
+.restore-button .content .glyph {
+	background-image: url(../../images/Themes/Metallic/RestoreGlyph.png);
+}
+
+/* Minimize Button */
+.min-button .content .glyph {
+	background-image: url(../../images/Themes/Metallic/MinimizeGlyph.png);
+}
+
+/* Help Button */
+.help-button .content .glyph {
+	background-image: url(../../images/Themes/Metallic/HelpGlyph.png);
+}
+
